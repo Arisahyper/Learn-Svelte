@@ -1,11 +1,12 @@
 <script lang="ts">
+	const script_name = 'svelte';
 </script>
 
-<div class="text-base">
-	<h1 class="text-red-500 text-base">Hello Svelte</h1>
-	<p class="text-gray-700 text-base">This is a Svelte component.</p>
-	<!-- 画像を表示 -->
-	<img src="https://picsum.photos/1280/720" alt="" />
+<div class="text-center">
+	<h1 class="text-red-500 py-8 leading-6 space-y-4 sm:text-lg sm:leading-7">
+		Hello {script_name}!
+	</h1>
 </div>
 
-<style></style>
+<style>
+</style>
