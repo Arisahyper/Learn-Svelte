@@ -1,6 +1,6 @@
 <script lang="ts">
 	const script_name = 'svelte';
-	import Header from '../components/header.svelte';
+	import Header from '../components/Root/Header.svelte';
 </script>
 
 <div class="text-center">

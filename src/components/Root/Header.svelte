@@ -2,7 +2,7 @@
 </script>
 
 <div class="text-center">
-	<h1>Hello world</h1>
+	<h1>Header Title</h1>
 </div>
 
 <style>
