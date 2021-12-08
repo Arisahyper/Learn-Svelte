@@ -29,11 +29,11 @@
 </script>
 
 <body class="flex flex-col min-h-screen m-0">
-	<div class="pb-2">
+	<div class="">
 		<Header />
 	</div>
 	<main class="flex-grow">
-		<div class="text-center py-4">
+		<div class="text-center py-4 mx-10">
 			<h1 class="text-red-500 py-2 leading-6 sm:text-lg sm:leading-7">
 				Hello {script_name}!
 			</h1>
@@ -42,13 +42,15 @@
 				{word}<br />
 			</p>
 			<!-- ループ -->
-			<div class="py-8">
+			<div class="py-6">
 				{#each urls as { name, description, url }}
-					<p class="text-center">
-						<a href={url} class="text-blue-500 hover:text-blue-700">{name}</a>
-						<br />
-						{description}
-					</p>
+					<div class="py-1.5">
+						<p class="text-center bg-gray-300 rounded-md">
+							<a href={url} class="text-blue-500 hover:text-blue-700">{name}</a>
+							<br />
+							{description}
+						</p>
+					</div>
 				{/each}
 			</div>
 		</div>
