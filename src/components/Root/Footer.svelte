@@ -5,7 +5,7 @@
 <body>
 	<div class="bg-gray-600">
 		<div class="text-center object-bottom">
-			<p>arisahyper.com {year}</p>
+			<p class="text-white">arisahyper.com {year}</p>
 		</div>
 	</div>
 </body>
