@@ -1,14 +1,67 @@
 <script lang="ts">
-	const script_name = 'svelte';
 	import Header from '../components/Root/Header.svelte';
+	import Footer from '../components/Root/Footer.svelte';
+
+	const script_name = 'svelte';
+	const word = 'This is a tutorial on an innovative tool called the svelte kit.\n';
 </script>
 
-<div class="text-center">
-	<Header />
-	<h1 class="text-red-500 py-8 leading-6 space-y-4 sm:text-lg sm:leading-7">
-		Hello {script_name}!
-	</h1>
-</div>
+<body class="flex flex-col min-h-screen">
+	<div class="py-2">
+		<Header />
+	</div>
+	<main class="flex-grow">
+		<div class="text-center py-4">
+			<h1 class="text-red-500 py-2 leading-6 sm:text-lg sm:leading-7">
+				Hello {script_name}!
+			</h1>
+
+			<p class="text-center">
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+				{word}<br />
+			</p>
+		</div>
+	</main>
+
+	<div>
+		<Footer />
+	</div>
+</body>
 
 <style>
 </style>
