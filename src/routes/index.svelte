@@ -18,42 +18,6 @@
 
 			<p class="text-center">
 				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
-				{word}<br />
 			</p>
 		</div>
 	</main>
