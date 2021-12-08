@@ -3,7 +3,7 @@
 </script>
 
 <body>
-	<div class="">
+	<div class="bg-gray-600">
 		<div class="text-center object-bottom">
 			<p>arisahyper.com {year}</p>
 		</div>
