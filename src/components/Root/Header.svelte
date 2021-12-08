@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<div class="bg-gray-600">
+<div class="bg-gray-600 h-10">
 	<div class="text-center">
 		<h1 class="text-white">Header Title</h1>
 	</div>
