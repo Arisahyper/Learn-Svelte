@@ -2,7 +2,7 @@
 	import Header from '../components/Root/Header.svelte';
 	import Footer from '../components/Root/Footer.svelte';
 
-	const script_name = 'svelte';
+	const script_name = 'Svelte';
 	const word = 'This is a tutorial on an innovative tool called the svelte kit.\n';
 	const urls = [
 		{
@@ -34,7 +34,7 @@
 	</div>
 	<main class="flex-grow">
 		<div class="text-center py-4 mx-10">
-			<h1 class="text-red-500 py-2 leading-6 sm:text-lg sm:leading-7">
+			<h1 class="text-red-500 py-2 leading-6 sm:text-lg sm:leading-7 text-xl">
 				Hello {script_name}!
 			</h1>
 
