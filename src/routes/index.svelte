@@ -45,7 +45,7 @@
 			<div class="py-6">
 				{#each urls as { name, description, url }}
 					<div class="py-1.5">
-						<p class="text-center bg-gray-300 rounded-md">
+						<p class="text-center bg-gray-300 rounded">
 							<a href={url} class="text-blue-500 hover:text-blue-700">{name}</a>
 							<br />
 							{description}
