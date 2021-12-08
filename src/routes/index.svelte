@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Header from '../components/Root/Header.svelte';
 	import Footer from '../components/Root/Footer.svelte';
-	import { each } from 'svelte/internal';
 
 	const script_name = 'svelte';
 	const word = 'This is a tutorial on an innovative tool called the svelte kit.\n';
