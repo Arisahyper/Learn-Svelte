@@ -5,7 +5,6 @@
 
 	const script_name = 'svelte';
 	const word = 'This is a tutorial on an innovative tool called the svelte kit.\n';
-	// json
 	const urls = [
 		{
 			name: 'svelte',
@@ -15,17 +14,17 @@
 		{
 			name: 'svelte-kit',
 			description: 'svelte-kit is a collection of tools for building svelte applications',
-			url: 'https://sveltekit.com/'
+			url: 'https://kit.svelte.dev/'
 		},
 		{
 			name: 'svelte-kit-docs',
 			description: 'svelte-kit-docs is a collection of documentation for svelte-kit',
-			url: 'https://sveltekit.com/docs/'
+			url: 'https://kit.svelte.dev/docs'
 		},
 		{
-			name: 'svelte-kit-tutorial',
-			description: 'svelte-kit-tutorial is a collection of tutorials for svelte-kit',
-			url: 'https://sveltekit.com/tutorials/'
+			name: 'svelte-tutorial',
+			description: 'svelte-tutorial is a collection of tutorials for svelte',
+			url: 'https://svelte.dev/tutorial/basics'
 		}
 	];
 </script>
@@ -44,13 +43,15 @@
 				{word}<br />
 			</p>
 			<!-- ループ -->
-			{#each urls as { name, description, url }}
-				<p class="text-center">
-					<a href={url} class="text-blue-500 hover:text-blue-700">{name}</a>
-					<br />
-					{description}
-				</p>
-			{/each}
+			<div class="py-8">
+				{#each urls as { name, description, url }}
+					<p class="text-center">
+						<a href={url} class="text-blue-500 hover:text-blue-700">{name}</a>
+						<br />
+						{description}
+					</p>
+				{/each}
+			</div>
 		</div>
 	</main>
 
