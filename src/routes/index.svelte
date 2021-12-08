@@ -1,9 +1,33 @@
 <script lang="ts">
 	import Header from '../components/Root/Header.svelte';
 	import Footer from '../components/Root/Footer.svelte';
+	import { each } from 'svelte/internal';
 
 	const script_name = 'svelte';
 	const word = 'This is a tutorial on an innovative tool called the svelte kit.\n';
+	// json
+	const urls = [
+		{
+			name: 'svelte',
+			description: 'svelte is a framework for building interactive UIs',
+			url: 'https://svelte.dev/'
+		},
+		{
+			name: 'svelte-kit',
+			description: 'svelte-kit is a collection of tools for building svelte applications',
+			url: 'https://sveltekit.com/'
+		},
+		{
+			name: 'svelte-kit-docs',
+			description: 'svelte-kit-docs is a collection of documentation for svelte-kit',
+			url: 'https://sveltekit.com/docs/'
+		},
+		{
+			name: 'svelte-kit-tutorial',
+			description: 'svelte-kit-tutorial is a collection of tutorials for svelte-kit',
+			url: 'https://sveltekit.com/tutorials/'
+		}
+	];
 </script>
 
 <body class="flex flex-col min-h-screen">
@@ -19,6 +43,14 @@
 			<p class="text-center">
 				{word}<br />
 			</p>
+			<!-- ループ -->
+			{#each urls as { name, description, url }}
+				<p class="text-center">
+					<a href={url} class="text-blue-500 hover:text-blue-700">{name}</a>
+					<br />
+					{description}
+				</p>
+			{/each}
 		</div>
 	</main>
 
