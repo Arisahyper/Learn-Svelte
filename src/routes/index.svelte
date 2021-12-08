@@ -29,8 +29,8 @@
 	];
 </script>
 
-<body class="flex flex-col min-h-screen">
-	<div class="py-2">
+<body class="flex flex-col min-h-screen m-0">
+	<div class="pb-2">
 		<Header />
 	</div>
 	<main class="flex-grow">
