@@ -1,5 +1,5 @@
 <script>
-	import About from '../components/Pages/About/About.svelte';
+	import About from '../components/pages/About/About.svelte';
 </script>
 
 <body>
