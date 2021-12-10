@@ -32,7 +32,7 @@
 	<!-- <div class="">
 		<Header />
 	</div> -->
-	<main class="flex-grow bg-gray-100">
+	<main class="">
 		<div class="text-center py-4 mx-10">
 			<h1 class="text-red-500 py-2 leading-6 sm:text-lg sm:leading-7 text-xl">
 				Hello {script_name}!
