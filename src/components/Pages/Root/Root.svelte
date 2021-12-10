@@ -28,10 +28,10 @@
 	];
 </script>
 
-<body class="flex flex-col min-h-screen m-0">
-	<div class="">
+<body class="flex flex-col m-0">
+	<!-- <div class="">
 		<Header />
-	</div>
+	</div> -->
 	<main class="flex-grow bg-gray-100">
 		<div class="text-center py-4 mx-10">
 			<h1 class="text-red-500 py-2 leading-6 sm:text-lg sm:leading-7 text-xl">
@@ -56,9 +56,9 @@
 		</div>
 	</main>
 
-	<div>
+	<!-- <div>
 		<Footer />
-	</div>
+	</div> -->
 </body>
 
 <style>
