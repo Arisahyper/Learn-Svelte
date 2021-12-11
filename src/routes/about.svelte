@@ -1,7 +1,7 @@
 <script>
-	import About from '../components/pages/About/About.svelte';
+	// import About from '../components/pages/About/About.svelte';
 </script>
 
 <body>
-	<About />
+	<!-- <About /> -->
 </body>
