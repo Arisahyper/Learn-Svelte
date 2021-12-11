@@ -24,6 +24,16 @@
 			name: 'svelte-tutorial',
 			description: 'svelte-tutorial is a collection of tutorials for svelte',
 			url: 'https://svelte.dev/tutorial/basics'
+		},
+		{
+			name: 'about page',
+			description: 'about',
+			url: 'https://learn-svelte-eight.vercel.app/about'
+		},
+		{
+			name: 'store demo',
+			description: 'Demo page of the store',
+			url: 'https://learn-svelte-eight.vercel.app/storeDemo'
 		}
 	];
 </script>
