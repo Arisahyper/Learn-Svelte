@@ -25,12 +25,12 @@
 		{
 			name: 'about page',
 			description: 'about',
-			url: 'https://learn-svelte-eight.vercel.app/about'
+			url: 'https://learn-svelte-kappa.vercel.app/about'
 		},
 		{
 			name: 'store demo',
 			description: 'Demo page of the store',
-			url: 'https://learn-svelte-eight.vercel.app/storeDemo'
+			url: 'https://learn-svelte-kappa.vercel.app/storeDemo'
 		}
 	];
 </script>

@@ -7,7 +7,7 @@
 	}
 </script>
 
-<body>
+<body class="flex flex-wrap">
 	<button on:click={increment}>+1</button>
 	<p>{$count}</p>
 </body>
