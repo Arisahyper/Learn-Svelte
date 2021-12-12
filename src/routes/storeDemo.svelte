@@ -1,6 +1,8 @@
 <!-- Incrementer.svelte -->
 <script>
 	import { count } from '../store/stores';
+	import { isHome } from '../store/stores';
+	isHome.update(() => false);
 
 	function increment() {
 		$count++; // 「$」を付けると、ストアの変数にアクセスできる
