@@ -41,37 +41,43 @@
 	<title>About</title>
 </svelte:head>
 
-<body class="flex flex-wrap text-center">
+<body>
 	<h1 class="pl-3 pt-2 text-lg">Svelte</h1>
-	{#each TailwindData as { name, description, url }}
-		<div class="w-full lg:w-1/3 md:w-1/2 p-2">
-			<div class="bg-gray-300 rounded p-2">
-				<h1>{name}</h1>
-				<p>{description}</p>
-				<a class="text-blue-500 hover:text-blue-700" href={url}>{url}</a>
+	<div class="flex flex-wrap text-center">
+		{#each TailwindData as { name, description, url }}
+			<div class="w-full lg:w-1/3 md:w-1/2 p-2">
+				<div class="bg-gray-300 rounded p-2">
+					<h1>{name}</h1>
+					<p>{description}</p>
+					<a class="text-blue-500 hover:text-blue-700" href={url}>{url}</a>
+				</div>
 			</div>
-		</div>
-	{/each}
+		{/each}
+	</div>
 
 	<h1 class="pl-3 text-lg">Tailwind</h1>
-	{#each SvelteData as { name, description, url }}
-		<div class="w-full lg:w-1/3 md:w-1/2 p-2">
-			<div class="bg-gray-300 rounded p-2">
-				<h1>{name}</h1>
-				<p>{description}</p>
-				<a class="text-blue-500 hover:text-blue-700" href={url}>{url}</a>
+	<div class="flex flex-wrap text-center">
+		{#each SvelteData as { name, description, url }}
+			<div class="w-full lg:w-1/3 md:w-1/2 p-2">
+				<div class="bg-gray-300 rounded p-2">
+					<h1>{name}</h1>
+					<p>{description}</p>
+					<a class="text-blue-500 hover:text-blue-700" href={url}>{url}</a>
+				</div>
 			</div>
-		</div>
-	{/each}
+		{/each}
+	</div>
 
 	<h1 class="pl-3 text-lg">Error</h1>
-	{#each ErrorData as { name, description, url }}
-		<div class="w-full lg:w-1/3 md:w-1/2 p-2">
-			<div class="bg-gray-300 rounded p-2">
-				<h1>{name}</h1>
-				<p>{description}</p>
-				<a class="text-blue-500 hover:text-blue-700" href={url}>{url}</a>
+	<div class="flex flex-wrap text-center">
+		{#each ErrorData as { name, description, url }}
+			<div class="w-full lg:w-1/3 md:w-1/2 p-2">
+				<div class="bg-gray-300 rounded p-2">
+					<h1>{name}</h1>
+					<p>{description}</p>
+					<a class="text-blue-500 hover:text-blue-700" href={url}>{url}</a>
+				</div>
 			</div>
-		</div>
-	{/each}
+		{/each}
+	</div>
 </body>
