@@ -65,7 +65,13 @@
 				<div class="bg-gray-300 rounded p-2">
 					<h1>{name}</h1>
 					<p>{description}</p>
-					<a class="text-blue-500 hover:text-blue-700" href={url}>{url}</a>
+					<a
+						class="text-blue-500 hover:text-blue-700"
+						href={url}
+						target="_blank"
+						rel="noopener noreferrer"
+						>{url}
+					</a>
 				</div>
 			</div>
 		{/each}
@@ -79,7 +85,13 @@
 				<div class="bg-gray-300 rounded p-2">
 					<h1>{name}</h1>
 					<p>{description}</p>
-					<a class="text-blue-500 hover:text-blue-700" href={url}>{url}</a>
+					<a
+						class="text-blue-500 hover:text-blue-700"
+						href={url}
+						target="_blank"
+						rel="noopener noreferrer"
+						>{url}
+					</a>
 				</div>
 			</div>
 		{/each}
@@ -93,7 +105,13 @@
 				<div class="bg-gray-300 rounded p-2">
 					<h1>{name}</h1>
 					<p>{description}</p>
-					<a class="text-blue-500 hover:text-blue-700" href={url}>{url}</a>
+					<a
+						class="text-blue-500 hover:text-blue-700"
+						href={url}
+						target="_blank"
+						rel="noopener noreferrer"
+						>{url}
+					</a>
 				</div>
 			</div>
 		{/each}
