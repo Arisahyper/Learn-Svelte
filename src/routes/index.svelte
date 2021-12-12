@@ -1,6 +1,6 @@
 <script lang="ts">
-	const script_name = 'Svelte';
-	const word = 'This is a tutorial on an innovative tool called the svelte kit.\n';
+	import { isHome } from '../store/stores';
+	isHome.update(() => true);
 	const urls = [
 		{
 			name: 'Link Collection',
@@ -22,12 +22,10 @@
 <body class="flex flex-col m-0">
 	<main>
 		<div class="text-center py-4 mx-10">
-			<h1 class="text-red-500 py-2 leading-6 sm:text-lg sm:leading-7 text-xl">
-				Hello {script_name}!
-			</h1>
+			<h1 class="text-red-500 py-2 leading-6 sm:text-lg sm:leading-7 text-xl">Hello Svelte!</h1>
 
 			<p class="text-center">
-				{word}<br />
+				This is a tutorial on an innovative tool called the svelte kit.<br />
 			</p>
 			<!-- ループ -->
 			<div class="py-6">

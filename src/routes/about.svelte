@@ -1,4 +1,9 @@
 <script>
+	import { update_await_block_branch } from 'svelte/internal';
+
+	import { isHome } from '../store/stores';
+	isHome.update(() => false);
+
 	const SvelteData = [
 		{
 			name: 'Svelte',
