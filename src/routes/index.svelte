@@ -35,6 +35,10 @@
 	];
 </script>
 
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
+
 <body class="flex flex-col m-0">
 	<main>
 		<div class="text-center py-4 mx-10">

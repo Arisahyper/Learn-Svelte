@@ -7,6 +7,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Store Demo</title>
+</svelte:head>
+
 <body class="flex flex-wrap">
 	<button on:click={increment}>+1</button>
 	<p>{$count}</p>
