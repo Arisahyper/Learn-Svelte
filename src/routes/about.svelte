@@ -33,6 +33,11 @@
 			name: '',
 			description: '',
 			url: ''
+		},
+		{
+			name: '',
+			description: '',
+			url: ''
 		}
 	];
 </script>
@@ -44,7 +49,7 @@
 <body>
 	<h1 class="pl-3 pt-2 text-lg">Svelte</h1>
 	<div class="flex flex-wrap text-center">
-		{#each TailwindData as { name, description, url }}
+		{#each SvelteData as { name, description, url }}
 			<div class="w-full lg:w-1/3 md:w-1/2 p-2">
 				<div class="bg-gray-300 rounded p-2">
 					<h1>{name}</h1>
@@ -57,7 +62,7 @@
 
 	<h1 class="pl-3 text-lg">Tailwind</h1>
 	<div class="flex flex-wrap text-center">
-		{#each SvelteData as { name, description, url }}
+		{#each TailwindData as { name, description, url }}
 			<div class="w-full lg:w-1/3 md:w-1/2 p-2">
 				<div class="bg-gray-300 rounded p-2">
 					<h1>{name}</h1>
