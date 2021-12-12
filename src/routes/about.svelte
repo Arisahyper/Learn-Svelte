@@ -1,6 +1,4 @@
 <script>
-	import { update_await_block_branch } from 'svelte/internal';
-
 	import { isHome } from '../store/stores';
 	isHome.update(() => false);
 
@@ -39,6 +37,11 @@
 			name: 'Svelteとは',
 			description: 'Zenn.dev Svelteとは',
 			url: 'https://zenn.dev/toshitoma/articles/what-is-svelte'
+		},
+		{
+			name: 'Store 使い方',
+			description: 'Svelteで作るTODOアプリ - 状態管理編',
+			url: 'https://qiita.com/nabekou29/items/dba59de91812a500060b'
 		}
 	];
 	const TailwindData = [
