@@ -58,6 +58,7 @@
 
 <body>
 	<h1 class="pl-3 pt-2 text-lg">Svelte</h1>
+	<hr class="ml-3 w-52 border-gray-500" />
 	<div class="flex flex-wrap text-center">
 		{#each SvelteData as { name, description, url }}
 			<div class="w-full lg:w-1/3 md:w-1/2 p-2">
@@ -71,6 +72,7 @@
 	</div>
 
 	<h1 class="pl-3 text-lg">Tailwind</h1>
+	<hr class="ml-3 w-52 border-gray-500" />
 	<div class="flex flex-wrap text-center">
 		{#each TailwindData as { name, description, url }}
 			<div class="w-full lg:w-1/3 md:w-1/2 p-2">
@@ -84,6 +86,7 @@
 	</div>
 
 	<h1 class="pl-3 text-lg">Error</h1>
+	<hr class="ml-3 w-52 border-gray-500" />
 	<div class="flex flex-wrap text-center">
 		{#each ErrorData as { name, description, url }}
 			<div class="w-full lg:w-1/3 md:w-1/2 p-2">
