@@ -1,18 +1,37 @@
 <script>
-	const TailwindData = [
-		{
-			name: 'Tailwind CSS',
-			description: 'tailwind.cssでよく使うデザインパターン',
-			url: 'https://jsnotice.com/posts/2020-04-30/'
-		},
+	const SvelteData = [
 		{
 			name: 'フューチャー技術ブログ',
 			description: 'Svelteに入門した',
 			url: 'https://future-architect.github.io/articles/20210622a/'
 		},
 		{
-			name: 'Sapper-Boilerplate',
-			description: 'A starter project for building Svelte apps',
+			name: 'How to Set Up SvelteKit with Tailwind CSS',
+			description: 'Svelte-Kit + Tailwind CSSの環境構築',
+			url: 'https://dev.to/swyx/how-to-set-up-svelte-with-tailwind-css-4fg5'
+		}
+	];
+	const TailwindData = [
+		{
+			name: 'デザインパターン',
+			description: 'tailwind.cssでよく使うデザインパターン',
+			url: 'https://jsnotice.com/posts/2020-04-30/'
+		},
+		{
+			name: 'Tailwind チートシート',
+			description: 'チートシート',
+			url: 'https://tailwindcomponents.com/cheatsheet/'
+		}
+	];
+	const ErrorData = [
+		{
+			name: '',
+			description: '',
+			url: ''
+		},
+		{
+			name: '',
+			description: '',
 			url: ''
 		}
 	];
@@ -23,7 +42,7 @@
 </svelte:head>
 
 <body class="flex flex-wrap text-center">
-	<h1>Svelte</h1>
+	<h1 class="pl-3 pt-2 text-lg">Svelte</h1>
 	{#each TailwindData as { name, description, url }}
 		<div class="w-full lg:w-1/3 md:w-1/2 p-2">
 			<div class="bg-gray-300 rounded p-2">
@@ -33,8 +52,20 @@
 			</div>
 		</div>
 	{/each}
-	<h1>Tailwind</h1>
-	{#each TailwindData as { name, description, url }}
+
+	<h1 class="pl-3 text-lg">Tailwind</h1>
+	{#each SvelteData as { name, description, url }}
+		<div class="w-full lg:w-1/3 md:w-1/2 p-2">
+			<div class="bg-gray-300 rounded p-2">
+				<h1>{name}</h1>
+				<p>{description}</p>
+				<a class="text-blue-500 hover:text-blue-700" href={url}>{url}</a>
+			</div>
+		</div>
+	{/each}
+
+	<h1 class="pl-3 text-lg">Error</h1>
+	{#each ErrorData as { name, description, url }}
 		<div class="w-full lg:w-1/3 md:w-1/2 p-2">
 			<div class="bg-gray-300 rounded p-2">
 				<h1>{name}</h1>
