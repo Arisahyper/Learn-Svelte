@@ -3,33 +3,33 @@
 	const word = 'This is a tutorial on an innovative tool called the svelte kit.\n';
 	const urls = [
 		{
-			name: 'svelte',
-			description: 'svelte is a framework for building interactive UIs',
+			name: 'Svelte',
+			description: 'Svelte is a framework for building interactive UIs',
 			url: 'https://svelte.dev/'
 		},
 		{
-			name: 'svelte-kit',
-			description: 'svelte-kit is a collection of tools for building svelte applications',
+			name: 'Svelte-Kit',
+			description: 'Svelte-Kit is a collection of tools for building svelte applications',
 			url: 'https://kit.svelte.dev/'
 		},
 		{
-			name: 'svelte-kit-docs',
-			description: 'svelte-kit-docs is a collection of documentation for svelte-kit',
+			name: 'Svelte-Kit-docs',
+			description: 'Svelte-Kit-docs is a collection of documentation for Svelte-Kit',
 			url: 'https://kit.svelte.dev/docs'
 		},
 		{
-			name: 'svelte-tutorial',
-			description: 'svelte-tutorial is a collection of tutorials for svelte',
+			name: 'Svelte-Tutorial',
+			description: 'svelte-tutorial is a collection of tutorials for Svelte',
 			url: 'https://svelte.dev/tutorial/basics'
 		},
 		{
-			name: 'about page',
-			description: 'about',
+			name: 'Link Collection',
+			description: 'Svelte & Tailwind Links',
 			url: 'https://learn-svelte-kappa.vercel.app/about'
 		},
 		{
-			name: 'store demo',
-			description: 'Demo page of the store',
+			name: 'Store Demo',
+			description: 'Demo page of the Store',
 			url: 'https://learn-svelte-kappa.vercel.app/storeDemo'
 		}
 	];
