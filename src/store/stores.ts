@@ -1,4 +1,4 @@
 import { writable } from 'svelte/store';
 
-export const count = writable(0);
-export const isHome = writable(false);
+export const count = writable<number>(0);
+export const isHome = writable<boolean>(false);
