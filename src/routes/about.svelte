@@ -9,9 +9,19 @@
 			name: 'How to Set Up SvelteKit with Tailwind CSS',
 			description: 'Svelte-Kit + Tailwind CSSの環境構築',
 			url: 'https://dev.to/swyx/how-to-set-up-svelte-with-tailwind-css-4fg5'
+		},
+		{
+			name: 'Svelteとは',
+			description: 'Zenn.dev Svelteとは',
+			url: 'https://zenn.dev/toshitoma/articles/what-is-svelte'
 		}
 	];
 	const TailwindData = [
+		{
+			name: 'Tailwind 基礎',
+			description: '利用者爆増中 初めてでもわかるTailwind CSS入門 基礎編',
+			url: 'https://reffect.co.jp/html/tailwindcss-for-beginners'
+		},
 		{
 			name: 'デザインパターン',
 			description: 'tailwind.cssでよく使うデザインパターン',
@@ -43,7 +53,7 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
+	<title>Link Collection</title>
 </svelte:head>
 
 <body>
