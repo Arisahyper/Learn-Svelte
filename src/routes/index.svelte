@@ -3,26 +3,6 @@
 	const word = 'This is a tutorial on an innovative tool called the svelte kit.\n';
 	const urls = [
 		{
-			name: 'Svelte',
-			description: 'Svelte is a framework for building interactive UIs',
-			url: 'https://svelte.dev/'
-		},
-		{
-			name: 'Svelte-Kit',
-			description: 'Svelte-Kit is a collection of tools for building svelte applications',
-			url: 'https://kit.svelte.dev/'
-		},
-		{
-			name: 'Svelte-Kit-docs',
-			description: 'Svelte-Kit-docs is a collection of documentation for Svelte-Kit',
-			url: 'https://kit.svelte.dev/docs'
-		},
-		{
-			name: 'Svelte-Tutorial',
-			description: 'svelte-tutorial is a collection of tutorials for Svelte',
-			url: 'https://svelte.dev/tutorial/basics'
-		},
-		{
 			name: 'Link Collection',
 			description: 'Svelte & Tailwind Links',
 			url: 'https://learn-svelte-kappa.vercel.app/about'
