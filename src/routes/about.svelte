@@ -1,5 +1,6 @@
 <script lang="ts">
 	import PageDescription from '../components/common/PageDescription.svelte';
+	import LinkButton from '../components/common/LinkButton.svelte';
 	import { isHome } from '../store/stores';
 	isHome.update(() => false);
 
@@ -48,7 +49,7 @@
 	const TailwindData = [
 		{
 			name: 'Tailwind',
-			description: 'チートシート',
+			description: 'Official Website',
 			url: 'https://tailwindcss.com/'
 		},
 		{
@@ -102,42 +103,23 @@
 	<div class="py-6 text-center">
 		<PageDescription {title} {description} />
 	</div>
-	<h1 class="pl-3 pt-2 text-lg">Svelte</h1>
+
+	<h1 class="pl-3 text-lg">Svelte</h1>
 	<hr class="ml-3 w-52 border-gray-500" />
 	<div class="flex flex-wrap text-center">
 		{#each SvelteData as { name, description, url }}
 			<div class="w-full xl:w-1/4 lg:w-1/3 md:w-1/2 p-2">
-				<div class="bg-gray-300 rounded p-2">
-					<h1>{name}</h1>
-					<p>{description}</p>
-					<a
-						class="text-blue-500 hover:text-blue-700"
-						href={url}
-						target="_blank"
-						rel="noopener noreferrer"
-						>{url}
-					</a>
-				</div>
+				<LinkButton {name} {description} {url} />
 			</div>
 		{/each}
 	</div>
 
-	<h1 class="pl-3 text-lg">Tailwind</h1>
+	<h1 class="pl-3 text-lg">Tailwind CSS</h1>
 	<hr class="ml-3 w-52 border-gray-500" />
 	<div class="flex flex-wrap text-center">
 		{#each TailwindData as { name, description, url }}
 			<div class="w-full xl:w-1/4 lg:w-1/3 md:w-1/2 p-2">
-				<div class="bg-gray-300 rounded p-2">
-					<h1>{name}</h1>
-					<p>{description}</p>
-					<a
-						class="text-blue-500 hover:text-blue-700"
-						href={url}
-						target="_blank"
-						rel="noopener noreferrer"
-						>{url}
-					</a>
-				</div>
+				<LinkButton {name} {description} {url} />
 			</div>
 		{/each}
 	</div>
@@ -147,17 +129,7 @@
 	<div class="flex flex-wrap text-center">
 		{#each ErrorData as { name, description, url }}
 			<div class="w-full xl:w-1/4 lg:w-1/3 md:w-1/2 p-2">
-				<div class="bg-gray-300 rounded p-2">
-					<h1>{name}</h1>
-					<p>{description}</p>
-					<a
-						class="text-blue-500 hover:text-blue-700"
-						href={url}
-						target="_blank"
-						rel="noopener noreferrer"
-						>{url}
-					</a>
-				</div>
+				<LinkButton {name} {description} {url} />
 			</div>
 		{/each}
 	</div>
