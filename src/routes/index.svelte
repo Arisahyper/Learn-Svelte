@@ -11,6 +11,11 @@
 			name: 'Store Demo',
 			description: 'Demo page of the Store',
 			url: 'https://learn-svelte-kappa.vercel.app/storeDemo'
+		},
+		{
+			name: 'Reactive Statement Demo',
+			description: 'Demo page of the Reactive Statement',
+			url: 'https://learn-svelte-kappa.vercel.app/reactiveStatement'
 		}
 	];
 </script>
@@ -31,11 +36,13 @@
 			<div class="py-6">
 				{#each urls as { name, description, url }}
 					<div class="py-1.5">
-						<p class="text-center bg-gray-300 rounded">
-							<a href={url} class="text-blue-500 hover:text-blue-700">{name}</a>
-							<br />
-							{description}
-						</p>
+						<a href={url}>
+							<p class="text-center bg-gray-300 hover:bg-gray-400 py-2 rounded">
+								<a href={url} class="text-blue-500 hover:text-blue-700">{name}</a>
+								<br />
+								{description}
+							</p>
+						</a>
 					</div>
 				{/each}
 			</div>

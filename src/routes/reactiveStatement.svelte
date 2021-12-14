@@ -2,11 +2,8 @@
 	import PageDescription from '../components/common/PageDescription.svelte';
 	let count: number = 0;
 	const title: string = 'Reactive Statement';
-	const description: string[] = [
-		'Reactive Statementのデモページです',
-		'`$:`を使用することで変数の変更を監視して、',
-		'関数等を再度発火させることができます。'
-	];
+	const description: string =
+		"Reactive statement is a statement that can be changed by the user. It's a kind of variable that can be changed by the user.";
 
 	// countの変更で発火
 	$: if (count >= 10) {
