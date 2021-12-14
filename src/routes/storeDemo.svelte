@@ -19,8 +19,8 @@
 </svelte:head>
 
 <body class="flex flex-wrap">
-	<div class="py-3 mx-auto text-center">
-		<div class="py-4">
+	<div class="mx-auto text-center">
+		<div class="py-6">
 			<PageDescription {title} {description} />
 		</div>
 		<Button clickFunction={increment} />
