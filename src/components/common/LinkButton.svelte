@@ -1,13 +1,4 @@
 <script lang="ts">
-	// export let urls: data[];
-	// export let padding: string;
-
-	type data = {
-		name: string;
-		description: string;
-		url: string;
-	};
-
 	export let name: string;
 	export let description: string;
 	export let url: string;
