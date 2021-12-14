@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Button from '../components/common/Button.svelte';
 	import PageDescription from '../components/common/PageDescription.svelte';
 	let count: number = 0;
 	const title: string = 'Reactive Statement';
@@ -25,8 +26,9 @@
 	<div class="py-4">
 		<PageDescription {title} {description} />
 	</div>
-	<button on:click={handleClick}>
-		Clicked {count}
-		{count === 1 ? 'time' : 'times'}
-	</button>
+	<div class="text-center">
+		<Button clickFunction={handleClick} />
+		<p>{count}</p>
+		<p>{count % 2 === 0 ? '偶数' : '奇数'}</p>
+	</div>
 </body>
