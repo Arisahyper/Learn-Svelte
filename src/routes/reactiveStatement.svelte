@@ -23,10 +23,10 @@
 </script>
 
 <body>
-	<div class="py-6 text-center">
-		<PageDescription {title} {description} />
-	</div>
 	<div class="text-center">
+		<div class="py-6">
+			<PageDescription {title} {description} />
+		</div>
 		<Button clickFunction={handleClick} />
 		<p>{count}</p>
 		<p>{count % 2 === 0 ? '偶数' : '奇数'}</p>
