@@ -32,7 +32,7 @@
 
 <body class="flex flex-col m-0">
 	<main>
-		<div class="text-center py-4 mx-10">
+		<div class="text-center py-6 mx-10">
 			<PageDescription {title} {description} />
 			{#each urls as { name, description, url }}
 				<div class="py-1.5">

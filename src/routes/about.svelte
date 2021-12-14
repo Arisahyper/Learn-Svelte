@@ -99,7 +99,7 @@
 </svelte:head>
 
 <body>
-	<div class="py-4">
+	<div class="py-6 text-center">
 		<PageDescription {title} {description} />
 	</div>
 	<h1 class="pl-3 pt-2 text-lg">Svelte</h1>
