@@ -1,6 +1,10 @@
 <script lang="ts">
 	import Button from '../components/common/Button.svelte';
 	import PageDescription from '../components/common/PageDescription.svelte';
+	import { isHome } from '../store/stores';
+
+	isHome.update(() => false);
+
 	let count: number = 0;
 	const title: string = 'Reactive Statement';
 	const description: string =
