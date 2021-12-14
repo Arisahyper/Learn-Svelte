@@ -1,6 +1,8 @@
 <script lang="ts">
+	import LinkButton from '../components/common/LinkButton.svelte';
 	import { isHome } from '../store/stores';
 	isHome.update(() => true);
+
 	const urls = [
 		{
 			name: 'Link Collection',
@@ -46,6 +48,12 @@
 					</div>
 				{/each}
 			</div>
+			<!--  -->
+			{#each urls as { name, description, url }}
+				<div class="py-1.5">
+					<LinkButton {name} {description} {url} />
+				</div>
+			{/each}
 		</div>
 	</main>
 </body>
