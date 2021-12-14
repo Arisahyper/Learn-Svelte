@@ -2,6 +2,7 @@
 <script>
 	import { count, isHome } from '../store/stores';
 	import PageDescription from '../components/common/PageDescription.svelte';
+	import Button from '../components/common/Button.svelte';
 
 	isHome.update(() => false);
 
@@ -22,12 +23,7 @@
 		<div class="py-4">
 			<PageDescription {title} {description} />
 		</div>
-		<button
-			class="bg-blue-400 hover:bg-blue-500 hover:drop-shadow-md duration-300 rounded"
-			on:click={increment}
-		>
-			<p class="m-2">increment</p>
-		</button>
+		<Button clickFunction={increment} />
 		<p>{$count}</p>
 	</div>
 </body>
