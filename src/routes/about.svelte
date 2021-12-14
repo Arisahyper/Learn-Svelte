@@ -1,4 +1,5 @@
-<script>
+<script lang="ts">
+	import PageDescription from '../components/common/PageDescription.svelte';
 	import { isHome } from '../store/stores';
 	isHome.update(() => false);
 
@@ -88,6 +89,9 @@
 			url: ''
 		}
 	];
+
+	const title: string = 'Link Collection';
+	const description: string = 'お世話になったリンク達';
 </script>
 
 <svelte:head>
@@ -95,6 +99,9 @@
 </svelte:head>
 
 <body>
+	<div class="py-4">
+		<PageDescription {title} {description} />
+	</div>
 	<h1 class="pl-3 pt-2 text-lg">Svelte</h1>
 	<hr class="ml-3 w-52 border-gray-500" />
 	<div class="flex flex-wrap text-center">
