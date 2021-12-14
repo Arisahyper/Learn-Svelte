@@ -1,8 +1,12 @@
 <!-- Incrementer.svelte -->
 <script>
-	import { count } from '../store/stores';
-	import { isHome } from '../store/stores';
+	import { count, isHome } from '../store/stores';
+	import PageDescription from '../components/common/PageDescription.svelte';
+
 	isHome.update(() => false);
+
+	const title = 'Incrementer';
+	const description = 'A simple counter that increments by one.';
 
 	function increment() {
 		$count++; // 「$」を付けると、ストアの変数にアクセスできる
@@ -15,7 +19,13 @@
 
 <body class="flex flex-wrap">
 	<div class="py-3 mx-auto text-center">
-		<button class="bg-blue-500 hover:bg-blue-700 rounded" on:click={increment}>
+		<div class="py-4">
+			<PageDescription {title} {description} />
+		</div>
+		<button
+			class="bg-blue-400 hover:bg-blue-500 hover:drop-shadow-md duration-300 rounded"
+			on:click={increment}
+		>
 			<p class="m-2">increment</p>
 		</button>
 		<p>{$count}</p>
