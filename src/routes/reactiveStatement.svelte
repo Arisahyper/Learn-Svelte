@@ -23,7 +23,7 @@
 </script>
 
 <body>
-	<div class="py-4">
+	<div class="py-6 text-center">
 		<PageDescription {title} {description} />
 	</div>
 	<div class="text-center">
