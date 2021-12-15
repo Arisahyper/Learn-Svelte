@@ -3,7 +3,6 @@
 	import Header from '../components/common/Header.svelte';
 	import Footer from '../components/common/Footer.svelte';
 	import { isHome } from '../store/stores';
-	console.log($isHome);
 </script>
 
 <body class="flex flex-col min-h-screen m-0">
