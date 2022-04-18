@@ -2,6 +2,7 @@
 	import '../app.css';
 	import Header from '../components/common/Header.svelte';
 	import Footer from '../components/common/Footer.svelte';
+	import BackToHome from '../components/common/BackToHome.svelte';
 	import { isHome } from '../store/stores';
 </script>
 
@@ -11,12 +12,13 @@
 		<slot />
 	</main>
 	{#if !$isHome}
-		<div class="pl-2 py-2 bg-gray-100">
+		<BackToHome />
+		<!-- <div class="pl-2 py-2 bg-gray-100">
 			<a
 				href="https://learn-svelte-kappa.vercel.app/"
 				class="text-sm text-blue-500 hover:text-blue-700 bg-light-100">← Back to Home</a
 			>
-		</div>
+		</div> -->
 	{/if}
 	<Footer />
 </body>
