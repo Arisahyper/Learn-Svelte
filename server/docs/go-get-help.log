@@ -1,0 +1,73 @@
+usage: go get [-d] [-t] [-u] [-v] [-insecure] [build flags] [packages]
+
+Get resolves its command-line arguments to packages at specific module versions,
+updates go.mod to require those versions, downloads source code into the
+module cache, then builds and installs the named packages.
+
+To add a dependency for a package or upgrade it to its latest version:
+
+	go get example.com/pkg
+
+To upgrade or downgrade a package to a specific version:
+
+	go get example.com/pkg@v1.2.3
+
+To remove a dependency on a module and downgrade modules that require it:
+
+	go get example.com/mod@none
+
+See https://golang.org/ref/mod#go-get for details.
+
+The 'go install' command may be used to build and install packages. When a
+version is specified, 'go install' runs in module-aware mode and ignores
+the go.mod file in the current directory. For example:
+
+	go install example.com/pkg@v1.2.3
+	go install example.com/pkg@latest
+
+See 'go help install' or https://golang.org/ref/mod#go-install for details.
+
+In addition to build flags (listed in 'go help build') 'go get' accepts the
+following flags.
+
+The -t flag instructs get to consider modules needed to build tests of
+packages specified on the command line.
+
+The -u flag instructs get to update modules providing dependencies
+of packages named on the command line to use newer minor or patch
+releases when available.
+
+The -u=patch flag (not -u patch) also instructs get to update dependencies,
+but changes the default to select patch releases.
+
+When the -t and -u flags are used together, get will update
+test dependencies as well.
+
+The -insecure flag permits fetching from repositories and resolving
+custom domains using insecure schemes such as HTTP, and also bypassess
+module sum validation using the checksum database. Use with caution.
+This flag is deprecated and will be removed in a future version of go.
+To permit the use of insecure schemes, use the GOINSECURE environment
+variable instead. To bypass module sum validation, use GOPRIVATE or
+GONOSUMDB. See 'go help environment' for details.
+
+The -d flag instructs get not to build or install packages. get will only
+update go.mod and download source code needed to build packages.
+
+Building and installing packages with get is deprecated. In a future release,
+the -d flag will be enabled by default, and 'go get' will be only be used to
+adjust dependencies of the current module. To install a package using
+dependencies from the current module, use 'go install'. To install a package
+ignoring the current module, use 'go install' with an @version suffix like
+"@latest" after each argument.
+
+For more about modules, see https://golang.org/ref/mod.
+
+For more about specifying packages, see 'go help packages'.
+
+This text describes the behavior of get using modules to manage source
+code and dependencies. If instead the go command is running in GOPATH
+mode, the details of get's flags and effects change, as does 'go help get'.
+See 'go help gopath-get'.
+
+See also: go build, go install, go clean, go mod.
