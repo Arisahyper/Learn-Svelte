@@ -30,12 +30,12 @@ const svelteLinks = [
 		url: 'https://dev.to/swyx/how-to-set-up-svelte-with-tailwind-css-4fg5'
 	},
 	{
-		name: 'Svelteとは',
+		name: 'What is Svelte',
 		description: 'Zenn.dev Svelteとは',
 		url: 'https://zenn.dev/toshitoma/articles/what-is-svelte'
 	},
 	{
-		name: 'Store 使い方',
+		name: 'How to use Store',
 		description: 'Svelteで作るTODOアプリ - 状態管理編',
 		url: 'https://qiita.com/nabekou29/items/dba59de91812a500060b'
 	}
@@ -47,8 +47,8 @@ const tailwindLinks = [
 		url: 'https://tailwindcss.com/'
 	},
 	{
-		name: 'Tailwind チートシート',
-		description: 'チートシート',
+		name: 'Tailwind Cheat Sheet',
+		description: 'Cheat Sheet',
 		url: 'https://tailwindcomponents.com/cheatsheet/'
 	},
 	{
@@ -57,7 +57,7 @@ const tailwindLinks = [
 		url: 'https://reffect.co.jp/html/tailwindcss-for-beginners'
 	},
 	{
-		name: 'デザインパターン',
+		name: 'Design Pattern',
 		description: 'tailwind.cssでよく使うデザインパターン',
 		url: 'https://jsnotice.com/posts/2020-04-30/'
 	}

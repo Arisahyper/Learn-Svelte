@@ -13,6 +13,16 @@ const pageLinks = [
 		name: 'Reactive Statement Demo',
 		description: 'Demo page of the Reactive Statement',
 		url: '/reactiveStatement'
+	},
+	{
+		name: 'CSS Animation Demo',
+		description: 'Demo page of the CSS Animation',
+		url: '/CssAnimation'
+	},
+	{
+		name: 'Thinking in Components',
+		description: 'Many types of components',
+		url: '/com'
 	}
 ];
 
